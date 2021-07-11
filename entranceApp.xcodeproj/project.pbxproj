@@ -3,16 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B745D368269A664C008A073D /* ReceptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D367269A664C008A073D /* ReceptionView.swift */; };
+		B745D36A269B2F45008A073D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D369269B2F45008A073D /* SettingView.swift */; };
 		B78EB0152690D2E300E839A4 /* entranceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0142690D2E300E839A4 /* entranceAppApp.swift */; };
 		B78EB0172690D2E300E839A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0162690D2E300E839A4 /* ContentView.swift */; };
 		B78EB0192690D2E500E839A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78EB0182690D2E500E839A4 /* Assets.xcassets */; };
 		B78EB01C2690D2E500E839A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78EB01B2690D2E500E839A4 /* Preview Assets.xcassets */; };
 		B78EB0272690D2E600E839A4 /* entranceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0262690D2E600E839A4 /* entranceAppTests.swift */; };
 		B78EB0322690D2E600E839A4 /* entranceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0312690D2E600E839A4 /* entranceAppUITests.swift */; };
+		B78EB0442690DCA600E839A4 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0432690DCA600E839A4 /* ColorExtension.swift */; };
+		B78EB04926924F9E00E839A4 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = B78EB04826924F9E00E839A4 /* APIKit */; };
+		B78EB04C269257AB00E839A4 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB04B269257AB00E839A4 /* APIError.swift */; };
+		B78EB04E2692585600E839A4 /* APIErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB04D2692585600E839A4 /* APIErrorResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B745D367269A664C008A073D /* ReceptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionView.swift; sourceTree = "<group>"; };
+		B745D369269B2F45008A073D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		B78EB0112690D2E300E839A4 /* entranceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entranceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78EB0142690D2E300E839A4 /* entranceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entranceAppApp.swift; sourceTree = "<group>"; };
 		B78EB0162690D2E300E839A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +53,9 @@
 		B78EB02D2690D2E600E839A4 /* entranceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = entranceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78EB0312690D2E600E839A4 /* entranceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entranceAppUITests.swift; sourceTree = "<group>"; };
 		B78EB0332690D2E600E839A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B78EB0432690DCA600E839A4 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B78EB04B269257AB00E839A4 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		B78EB04D2692585600E839A4 /* APIErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78EB04926924F9E00E839A4 /* APIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +107,12 @@
 		B78EB0132690D2E300E839A4 /* entranceApp */ = {
 			isa = PBXGroup;
 			children = (
+				B78EB0462692471D00E839A4 /* Infrastracture */,
+				B78EB0452692470D00E839A4 /* Domain */,
+				B78EB0422690DC5F00E839A4 /* Extention */,
+				B78EB0402690D83800E839A4 /* Views */,
+				B78EB0412690D84B00E839A4 /* ViewModels */,
 				B78EB0142690D2E300E839A4 /* entranceAppApp.swift */,
-				B78EB0162690D2E300E839A4 /* ContentView.swift */,
 				B78EB0182690D2E500E839A4 /* Assets.xcassets */,
 				B78EB01D2690D2E500E839A4 /* Info.plist */,
 				B78EB01A2690D2E500E839A4 /* Preview Content */,
@@ -130,6 +146,63 @@
 			path = entranceAppUITests;
 			sourceTree = "<group>";
 		};
+		B78EB03F2690D82100E839A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B78EB0402690D83800E839A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B78EB0162690D2E300E839A4 /* ContentView.swift */,
+				B745D367269A664C008A073D /* ReceptionView.swift */,
+				B745D369269B2F45008A073D /* SettingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B78EB0412690D84B00E839A4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B78EB0422690DC5F00E839A4 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				B78EB0432690DCA600E839A4 /* ColorExtension.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		B78EB0452692470D00E839A4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B78EB03F2690D82100E839A4 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B78EB0462692471D00E839A4 /* Infrastracture */ = {
+			isa = PBXGroup;
+			children = (
+				B78EB04A2692578E00E839A4 /* API */,
+			);
+			path = Infrastracture;
+			sourceTree = "<group>";
+		};
+		B78EB04A2692578E00E839A4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B78EB04B269257AB00E839A4 /* APIError.swift */,
+				B78EB04D2692585600E839A4 /* APIErrorResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +219,9 @@
 			dependencies = (
 			);
 			name = entranceApp;
+			packageProductDependencies = (
+				B78EB04826924F9E00E839A4 /* APIKit */,
+			);
 			productName = entranceApp;
 			productReference = B78EB0112690D2E300E839A4 /* entranceApp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +293,9 @@
 				Base,
 			);
 			mainGroup = B78EB0082690D2E200E839A4;
+			packageReferences = (
+				B78EB04726924F9E00E839A4 /* XCRemoteSwiftPackageReference "APIKit" */,
+			);
 			productRefGroup = B78EB0122690D2E300E839A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +338,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B745D368269A664C008A073D /* ReceptionView.swift in Sources */,
+				B78EB0442690DCA600E839A4 /* ColorExtension.swift in Sources */,
+				B78EB04C269257AB00E839A4 /* APIError.swift in Sources */,
+				B745D36A269B2F45008A073D /* SettingView.swift in Sources */,
 				B78EB0172690D2E300E839A4 /* ContentView.swift in Sources */,
+				B78EB04E2692585600E839A4 /* APIErrorResponse.swift in Sources */,
 				B78EB0152690D2E300E839A4 /* entranceAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +664,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B78EB04726924F9E00E839A4 /* XCRemoteSwiftPackageReference "APIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ishkawa/APIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B78EB04826924F9E00E839A4 /* APIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B78EB04726924F9E00E839A4 /* XCRemoteSwiftPackageReference "APIKit" */;
+			productName = APIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B78EB0092690D2E200E839A4 /* Project object */;
 }
