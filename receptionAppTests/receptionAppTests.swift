@@ -1,14 +1,7 @@
-//
-//  entranceAppTests.swift
-//  entranceAppTests
-//
-//  Created by yuta sanada on 2021/07/04.
-//
-
 import XCTest
-@testable import entranceApp
+@testable import receptionApp
 
-class entranceAppTests: XCTestCase {
+class receptionAppTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

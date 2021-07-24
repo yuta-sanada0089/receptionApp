@@ -1,13 +1,6 @@
-//
-//  entranceAppUITests.swift
-//  entranceAppUITests
-//
-//  Created by yuta sanada on 2021/07/04.
-//
-
 import XCTest
 
-class entranceAppUITests: XCTestCase {
+class receptionAppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
