@@ -3,26 +3,32 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                Text("LOGO")
-                    .frame(width: 200, height: 200, alignment: .center)
-                    .foregroundColor(.primary)
-                    .font(.custom("HiraginoSans-W6", size: 64))
-                    .padding(150)
-                NavigationLink(destination: ReceptionView(), label: {
-                    ZStack(alignment: .center, content: {
-                        Text("受付へ進む")
-                            .frame(width: 200, height: 50)
-                            .foregroundColor(.white)
-                            .background(
-                                LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing)
-                            )
+            NavigationLink(destination: ReceptionView(), label: {
+                ZStack {
+                    Image("default_back_image")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .edgesIgnoringSafeArea(.all)
+                    Rectangle()
+                        .fill(Color.light54)
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
+                        .edgesIgnoringSafeArea(.all)
+                    VStack {
+                        Image("default_logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: 500, maxHeight: 450)
+                            .padding(20)
+                        Text("ご用の方は画面をタップしてください")
+                            .frame(width: 565, height: 68, alignment: .center)
+                            .foregroundColor(.primaryTextColor)
+                            .background(Color.light100)
                             .font(.custom("HiraginoSans-W3", size: 24))
-                            .cornerRadius(5.0)
-                            .shadow(color: .black, radius: 5.0, x: 1.0, y: 1.0)
-                    })
-                })
-            }
+                            .cornerRadius(34.0)
+                    }
+                }
+            })
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing:
                 NavigationLink(destination: SettingView(), label: {
