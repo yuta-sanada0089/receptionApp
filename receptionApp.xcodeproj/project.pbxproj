@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		B745D368269A664C008A073D /* ReceptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D367269A664C008A073D /* ReceptionView.swift */; };
 		B745D36A269B2F45008A073D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D369269B2F45008A073D /* SettingView.swift */; };
-		B78EB0152690D2E300E839A4 /* entranceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0142690D2E300E839A4 /* entranceAppApp.swift */; };
+		B78EB0152690D2E300E839A4 /* receptionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0142690D2E300E839A4 /* receptionAppApp.swift */; };
 		B78EB0172690D2E300E839A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0162690D2E300E839A4 /* ContentView.swift */; };
 		B78EB0192690D2E500E839A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78EB0182690D2E500E839A4 /* Assets.xcassets */; };
 		B78EB01C2690D2E500E839A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78EB01B2690D2E500E839A4 /* Preview Assets.xcassets */; };
-		B78EB0272690D2E600E839A4 /* entranceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0262690D2E600E839A4 /* entranceAppTests.swift */; };
-		B78EB0322690D2E600E839A4 /* entranceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0312690D2E600E839A4 /* entranceAppUITests.swift */; };
+		B78EB0272690D2E600E839A4 /* receptionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0262690D2E600E839A4 /* receptionAppTests.swift */; };
+		B78EB0322690D2E600E839A4 /* receptionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0312690D2E600E839A4 /* receptionAppUITests.swift */; };
 		B78EB0442690DCA600E839A4 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0432690DCA600E839A4 /* ColorExtension.swift */; };
 		B78EB04926924F9E00E839A4 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = B78EB04826924F9E00E839A4 /* APIKit */; };
 		B78EB04C269257AB00E839A4 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB04B269257AB00E839A4 /* APIError.swift */; };
@@ -41,17 +41,17 @@
 /* Begin PBXFileReference section */
 		B745D367269A664C008A073D /* ReceptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionView.swift; sourceTree = "<group>"; };
 		B745D369269B2F45008A073D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		B78EB0112690D2E300E839A4 /* entranceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entranceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B78EB0142690D2E300E839A4 /* entranceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entranceAppApp.swift; sourceTree = "<group>"; };
+		B78EB0112690D2E300E839A4 /* receptionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = receptionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78EB0142690D2E300E839A4 /* receptionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = receptionAppApp.swift; sourceTree = "<group>"; };
 		B78EB0162690D2E300E839A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B78EB0182690D2E500E839A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B78EB01B2690D2E500E839A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B78EB01D2690D2E500E839A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B78EB0222690D2E600E839A4 /* entranceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = entranceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B78EB0262690D2E600E839A4 /* entranceAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entranceAppTests.swift; sourceTree = "<group>"; };
+		B78EB0222690D2E600E839A4 /* receptionAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = receptionAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78EB0262690D2E600E839A4 /* receptionAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = receptionAppTests.swift; sourceTree = "<group>"; };
 		B78EB0282690D2E600E839A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B78EB02D2690D2E600E839A4 /* entranceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = entranceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B78EB0312690D2E600E839A4 /* entranceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entranceAppUITests.swift; sourceTree = "<group>"; };
+		B78EB02D2690D2E600E839A4 /* receptionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = receptionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78EB0312690D2E600E839A4 /* receptionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = receptionAppUITests.swift; sourceTree = "<group>"; };
 		B78EB0332690D2E600E839A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B78EB0432690DCA600E839A4 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		B78EB04B269257AB00E839A4 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -87,9 +87,9 @@
 		B78EB0082690D2E200E839A4 = {
 			isa = PBXGroup;
 			children = (
-				B78EB0132690D2E300E839A4 /* entranceApp */,
-				B78EB0252690D2E600E839A4 /* entranceAppTests */,
-				B78EB0302690D2E600E839A4 /* entranceAppUITests */,
+				B78EB0132690D2E300E839A4 /* receptionApp */,
+				B78EB0252690D2E600E839A4 /* receptionAppTests */,
+				B78EB0302690D2E600E839A4 /* receptionAppUITests */,
 				B78EB0122690D2E300E839A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,14 +97,14 @@
 		B78EB0122690D2E300E839A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B78EB0112690D2E300E839A4 /* entranceApp.app */,
-				B78EB0222690D2E600E839A4 /* entranceAppTests.xctest */,
-				B78EB02D2690D2E600E839A4 /* entranceAppUITests.xctest */,
+				B78EB0112690D2E300E839A4 /* receptionApp.app */,
+				B78EB0222690D2E600E839A4 /* receptionAppTests.xctest */,
+				B78EB02D2690D2E600E839A4 /* receptionAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B78EB0132690D2E300E839A4 /* entranceApp */ = {
+		B78EB0132690D2E300E839A4 /* receptionApp */ = {
 			isa = PBXGroup;
 			children = (
 				B78EB0462692471D00E839A4 /* Infrastracture */,
@@ -112,12 +112,12 @@
 				B78EB0422690DC5F00E839A4 /* Extention */,
 				B78EB0402690D83800E839A4 /* Views */,
 				B78EB0412690D84B00E839A4 /* ViewModels */,
-				B78EB0142690D2E300E839A4 /* entranceAppApp.swift */,
+				B78EB0142690D2E300E839A4 /* receptionAppApp.swift */,
 				B78EB0182690D2E500E839A4 /* Assets.xcassets */,
 				B78EB01D2690D2E500E839A4 /* Info.plist */,
 				B78EB01A2690D2E500E839A4 /* Preview Content */,
 			);
-			path = entranceApp;
+			path = receptionApp;
 			sourceTree = "<group>";
 		};
 		B78EB01A2690D2E500E839A4 /* Preview Content */ = {
@@ -128,22 +128,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B78EB0252690D2E600E839A4 /* entranceAppTests */ = {
+		B78EB0252690D2E600E839A4 /* receptionAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				B78EB0262690D2E600E839A4 /* entranceAppTests.swift */,
+				B78EB0262690D2E600E839A4 /* receptionAppTests.swift */,
 				B78EB0282690D2E600E839A4 /* Info.plist */,
 			);
-			path = entranceAppTests;
+			path = receptionAppTests;
 			sourceTree = "<group>";
 		};
-		B78EB0302690D2E600E839A4 /* entranceAppUITests */ = {
+		B78EB0302690D2E600E839A4 /* receptionAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B78EB0312690D2E600E839A4 /* entranceAppUITests.swift */,
+				B78EB0312690D2E600E839A4 /* receptionAppUITests.swift */,
 				B78EB0332690D2E600E839A4 /* Info.plist */,
 			);
-			path = entranceAppUITests;
+			path = receptionAppUITests;
 			sourceTree = "<group>";
 		};
 		B78EB03F2690D82100E839A4 /* Models */ = {
@@ -206,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B78EB0102690D2E300E839A4 /* entranceApp */ = {
+		B78EB0102690D2E300E839A4 /* receptionApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B78EB0362690D2E600E839A4 /* Build configuration list for PBXNativeTarget "entranceApp" */;
+			buildConfigurationList = B78EB0362690D2E600E839A4 /* Build configuration list for PBXNativeTarget "receptionApp" */;
 			buildPhases = (
 				B78EB00D2690D2E300E839A4 /* Sources */,
 				B78EB00E2690D2E300E839A4 /* Frameworks */,
@@ -218,17 +218,17 @@
 			);
 			dependencies = (
 			);
-			name = entranceApp;
+			name = receptionApp;
 			packageProductDependencies = (
 				B78EB04826924F9E00E839A4 /* APIKit */,
 			);
 			productName = entranceApp;
-			productReference = B78EB0112690D2E300E839A4 /* entranceApp.app */;
+			productReference = B78EB0112690D2E300E839A4 /* receptionApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B78EB0212690D2E600E839A4 /* entranceAppTests */ = {
+		B78EB0212690D2E600E839A4 /* receptionAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B78EB0392690D2E600E839A4 /* Build configuration list for PBXNativeTarget "entranceAppTests" */;
+			buildConfigurationList = B78EB0392690D2E600E839A4 /* Build configuration list for PBXNativeTarget "receptionAppTests" */;
 			buildPhases = (
 				B78EB01E2690D2E600E839A4 /* Sources */,
 				B78EB01F2690D2E600E839A4 /* Frameworks */,
@@ -239,14 +239,14 @@
 			dependencies = (
 				B78EB0242690D2E600E839A4 /* PBXTargetDependency */,
 			);
-			name = entranceAppTests;
+			name = receptionAppTests;
 			productName = entranceAppTests;
-			productReference = B78EB0222690D2E600E839A4 /* entranceAppTests.xctest */;
+			productReference = B78EB0222690D2E600E839A4 /* receptionAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B78EB02C2690D2E600E839A4 /* entranceAppUITests */ = {
+		B78EB02C2690D2E600E839A4 /* receptionAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B78EB03C2690D2E600E839A4 /* Build configuration list for PBXNativeTarget "entranceAppUITests" */;
+			buildConfigurationList = B78EB03C2690D2E600E839A4 /* Build configuration list for PBXNativeTarget "receptionAppUITests" */;
 			buildPhases = (
 				B78EB0292690D2E600E839A4 /* Sources */,
 				B78EB02A2690D2E600E839A4 /* Frameworks */,
@@ -257,9 +257,9 @@
 			dependencies = (
 				B78EB02F2690D2E600E839A4 /* PBXTargetDependency */,
 			);
-			name = entranceAppUITests;
+			name = receptionAppUITests;
 			productName = entranceAppUITests;
-			productReference = B78EB02D2690D2E600E839A4 /* entranceAppUITests.xctest */;
+			productReference = B78EB02D2690D2E600E839A4 /* receptionAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -284,7 +284,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B78EB00C2690D2E200E839A4 /* Build configuration list for PBXProject "entranceApp" */;
+			buildConfigurationList = B78EB00C2690D2E200E839A4 /* Build configuration list for PBXProject "receptionApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -300,9 +300,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B78EB0102690D2E300E839A4 /* entranceApp */,
-				B78EB0212690D2E600E839A4 /* entranceAppTests */,
-				B78EB02C2690D2E600E839A4 /* entranceAppUITests */,
+				B78EB0102690D2E300E839A4 /* receptionApp */,
+				B78EB0212690D2E600E839A4 /* receptionAppTests */,
+				B78EB02C2690D2E600E839A4 /* receptionAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -344,7 +344,7 @@
 				B745D36A269B2F45008A073D /* SettingView.swift in Sources */,
 				B78EB0172690D2E300E839A4 /* ContentView.swift in Sources */,
 				B78EB04E2692585600E839A4 /* APIErrorResponse.swift in Sources */,
-				B78EB0152690D2E300E839A4 /* entranceAppApp.swift in Sources */,
+				B78EB0152690D2E300E839A4 /* receptionAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B78EB0272690D2E600E839A4 /* entranceAppTests.swift in Sources */,
+				B78EB0272690D2E600E839A4 /* receptionAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B78EB0322690D2E600E839A4 /* entranceAppUITests.swift in Sources */,
+				B78EB0322690D2E600E839A4 /* receptionAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,12 +369,12 @@
 /* Begin PBXTargetDependency section */
 		B78EB0242690D2E600E839A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B78EB0102690D2E300E839A4 /* entranceApp */;
+			target = B78EB0102690D2E300E839A4 /* receptionApp */;
 			targetProxy = B78EB0232690D2E600E839A4 /* PBXContainerItemProxy */;
 		};
 		B78EB02F2690D2E600E839A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B78EB0102690D2E300E839A4 /* entranceApp */;
+			target = B78EB0102690D2E300E839A4 /* receptionApp */;
 			targetProxy = B78EB02E2690D2E600E839A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -502,16 +502,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"entranceApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"receptionApp/Preview Content\"";
 				DEVELOPMENT_TEAM = Q6378HF4P6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = entranceApp/Info.plist;
+				INFOPLIST_FILE = receptionApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.entranceApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.receptionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,16 +524,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"entranceApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"receptionApp/Preview Content\"";
 				DEVELOPMENT_TEAM = Q6378HF4P6;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = entranceApp/Info.plist;
+				INFOPLIST_FILE = receptionApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.entranceApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.receptionApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -547,18 +547,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6378HF4P6;
-				INFOPLIST_FILE = entranceAppTests/Info.plist;
+				INFOPLIST_FILE = receptionAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.entranceAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.receptionAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/entranceApp.app/entranceApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/receptionApp.app/receptionApp";
 			};
 			name = Debug;
 		};
@@ -569,18 +569,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6378HF4P6;
-				INFOPLIST_FILE = entranceAppTests/Info.plist;
+				INFOPLIST_FILE = receptionAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.entranceAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.receptionAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/entranceApp.app/entranceApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/receptionApp.app/receptionApp";
 			};
 			name = Release;
 		};
@@ -590,17 +590,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6378HF4P6;
-				INFOPLIST_FILE = entranceAppUITests/Info.plist;
+				INFOPLIST_FILE = receptionAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.entranceAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.receptionAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = entranceApp;
+				TEST_TARGET_NAME = receptionApp;
 			};
 			name = Debug;
 		};
@@ -610,24 +610,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6378HF4P6;
-				INFOPLIST_FILE = entranceAppUITests/Info.plist;
+				INFOPLIST_FILE = receptionAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.entranceAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanada.receptionAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = entranceApp;
+				TEST_TARGET_NAME = receptionApp;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B78EB00C2690D2E200E839A4 /* Build configuration list for PBXProject "entranceApp" */ = {
+		B78EB00C2690D2E200E839A4 /* Build configuration list for PBXProject "receptionApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B78EB0342690D2E600E839A4 /* Debug */,
@@ -636,7 +636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B78EB0362690D2E600E839A4 /* Build configuration list for PBXNativeTarget "entranceApp" */ = {
+		B78EB0362690D2E600E839A4 /* Build configuration list for PBXNativeTarget "receptionApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B78EB0372690D2E600E839A4 /* Debug */,
@@ -645,7 +645,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B78EB0392690D2E600E839A4 /* Build configuration list for PBXNativeTarget "entranceAppTests" */ = {
+		B78EB0392690D2E600E839A4 /* Build configuration list for PBXNativeTarget "receptionAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B78EB03A2690D2E600E839A4 /* Debug */,
@@ -654,7 +654,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B78EB03C2690D2E600E839A4 /* Build configuration list for PBXNativeTarget "entranceAppUITests" */ = {
+		B78EB03C2690D2E600E839A4 /* Build configuration list for PBXNativeTarget "receptionAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B78EB03D2690D2E600E839A4 /* Debug */,

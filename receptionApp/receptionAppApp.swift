@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct entranceAppApp: App {
+struct receptionAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
