@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B78EB0102690D2E300E839A4"
-               BuildableName = "entranceApp.app"
+               BuildableName = "receptionApp.app"
                BlueprintName = "receptionApp"
                ReferencedContainer = "container:receptionApp.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B78EB0212690D2E600E839A4"
-               BuildableName = "entranceAppTests.xctest"
+               BuildableName = "receptionAppTests.xctest"
                BlueprintName = "receptionAppTests"
                ReferencedContainer = "container:receptionApp.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B78EB02C2690D2E600E839A4"
-               BuildableName = "entranceAppUITests.xctest"
+               BuildableName = "receptionAppUITests.xctest"
                BlueprintName = "receptionAppUITests"
                ReferencedContainer = "container:receptionApp.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B78EB0102690D2E300E839A4"
-            BuildableName = "entranceApp.app"
+            BuildableName = "receptionApp.app"
             BlueprintName = "receptionApp"
             ReferencedContainer = "container:receptionApp.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B78EB0102690D2E300E839A4"
-            BuildableName = "entranceApp.app"
+            BuildableName = "receptionApp.app"
             BlueprintName = "receptionApp"
             ReferencedContainer = "container:receptionApp.xcodeproj">
          </BuildableReference>
