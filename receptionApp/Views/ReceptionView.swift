@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct ReceptionView: View {
-    private var columns: [GridItem] = Array(repeating: .init(.flexible(maximum: 364), spacing: CGFloat(10.0) ), count: 3)
+    @ObservedObject private var viewModel = ReceptionViewModel()
+    private var columns: [GridItem] = Array(repeating: .init(.flexible(maximum: 364), spacing: CGFloat(30.0) ), count: 2)
     var body: some View {
         VStack {
             Spacer().frame(height: 70)
@@ -17,9 +18,11 @@ struct ReceptionView: View {
                 .multilineTextAlignment(.center)
             Spacer()
                 .frame(height: 16)
-            LazyVGrid(columns: columns, alignment: .center, spacing: 10, content: {
-                ForEach((1...5), id: \.self) {num in
-                    ReceptionButtonView(title: "担当者で探す方はこちら", subTitle: "interview")
+            LazyVGrid(columns: columns, alignment: .center, spacing: 30, content: {
+                ForEach(viewModel.receptionButtons, id: \.title) { receptionButton in
+                    NavigationLink(destination: nextView(receptionButton: receptionButton), label: {
+                        ReceptionButtonView(receptionButton: receptionButton)
+                    })
                 }
             })
             Spacer()
@@ -27,20 +30,29 @@ struct ReceptionView: View {
         .hideNavigationBar()
         .edgesIgnoringSafeArea(.all)
     }
+    
+    private func nextView(receptionButton: ReceptionButton) -> AnyView {
+        switch receptionButton.buttonType {
+        case "search": return AnyView(SearchView())
+        case "general", "interview": return AnyView(EntryView())
+        default: return AnyView(SettingView())
+        }
+    }
 }
 
 struct ReceptionButtonView: View {
-    var title: String
-    var subTitle: String
+    var receptionButton: ReceptionButton
     var body: some View {
         VStack {
-            Text(title)
+            Text(receptionButton.title)
                 .font(.defaultFont(ofSize: 24))
+                .foregroundColor(.primaryTextColor)
                 .padding(8)
             Divider()
                 .background(Color.borderColor)
-            Text(subTitle)
+            Text(receptionButton.subTitle)
                 .font(.defaultFont(ofSize: 14))
+                .foregroundColor(.primaryTextColor)
                 .padding(8)
             Rectangle()
                 .foregroundColor(.linkTextColor)
