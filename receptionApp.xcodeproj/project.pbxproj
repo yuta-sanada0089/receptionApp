@@ -56,7 +56,7 @@
 		B781336B26B7377200689A50 /* ReceptionButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionButtonData.swift; sourceTree = "<group>"; };
 		B781336D26B73BFE00689A50 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		B781336F26B73C2300689A50 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		B781337126B73CDF00689A50 /* ReceptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReceptionViewModel.swift; path = receptionApp/Views/ReceptionViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B781337126B73CDF00689A50 /* ReceptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReceptionViewModel.swift; path = receptionApp/ViewModels/ReceptionViewModel.swift; sourceTree = SOURCE_ROOT; };
 		B78EB0112690D2E300E839A4 /* receptionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = receptionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78EB0142690D2E300E839A4 /* receptionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = receptionAppApp.swift; sourceTree = "<group>"; };
 		B78EB0162690D2E300E839A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
