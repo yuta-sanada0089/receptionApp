@@ -26,6 +26,8 @@ struct ContentView: View {
                             .background(Color.light100)
                             .font(.custom("HiraginoSans-W3", size: 24))
                             .cornerRadius(34.0)
+                            .compositingGroup()
+                            .shadow(color: .dark26, radius: 4, x: 0, y: 0)
                     }
                 }
             })
