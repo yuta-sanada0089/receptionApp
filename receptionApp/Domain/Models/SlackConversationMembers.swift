@@ -1,7 +1,7 @@
 import Foundation
 import ObjectMapper
 
-class SlackConversationMembers: ImmutableMappable {
+class SlackConversation: ImmutableMappable {
     let members: [String]
     
     required init(map: Map) throws {
