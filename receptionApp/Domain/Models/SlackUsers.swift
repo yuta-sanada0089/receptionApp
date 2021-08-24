@@ -1,7 +1,7 @@
 import Foundation
 import ObjectMapper
 
-class SlackUserList: ImmutableMappable {
+class SlackUsers: ImmutableMappable {
     let members: [User]
     let cacheTs: Int
     
