@@ -4,7 +4,7 @@ struct UserCardView: View {
     let user: User
     
     var body: some View {
-        NavigationLink(destination: ContentView(), label: {
+        NavigationLink(destination: VisitorView(user: user), label: {
             HStack(spacing: 8.0) {
                 Image(uiImage: user.profile.displayImage)
                     .resizable()
@@ -13,13 +13,15 @@ struct UserCardView: View {
                     .background(Color.dark12)
                     .cornerRadius(44)
                 VStack(alignment: .leading, spacing: 8.0) {
-                    Text(user.profile.title ?? "")
-                        .font(.defaultFont(ofSize: 14))
-                        .padding(4)
-                        .background(Color.dark12)
+                    if let title = user.profile.title {
+                        Text(title)
+                            .font(.defaultFont(ofSize: 14))
+                            .padding(4)
+                            .background(Color.dark12)
+                    }
                     Text(user.realName)
                         .font(.defaultFont(ofSize: 24))
-                    Text("さなだ　ゆうた")
+                    Text(user.profile.displayName ?? "")
                         .font(.defaultFont(ofSize: 14))
                 }
                 Spacer()
