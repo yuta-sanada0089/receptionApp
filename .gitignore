@@ -25,3 +25,5 @@ DerivedData/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 /*.gcno
+
+.env

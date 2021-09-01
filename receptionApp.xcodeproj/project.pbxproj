@@ -17,6 +17,8 @@
 		B719AB4926CC451C000F5042 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB4826CC451C000F5042 /* Profile.swift */; };
 		B719AB4B26D16D7C000F5042 /* SlackUsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB4A26D16D7C000F5042 /* SlackUsersRepository.swift */; };
 		B719AB4D26D56166000F5042 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB4C26D56166000F5042 /* VisitorView.swift */; };
+		B719AB5826DFF44F000F5042 /* .env.example in Resources */ = {isa = PBXBuildFile; fileRef = B719AB5726DFF44F000F5042 /* .env.example */; };
+		B719AB5A26DFF477000F5042 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = B719AB5926DFF477000F5042 /* .env */; };
 		B745D368269A664C008A073D /* ReceptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D367269A664C008A073D /* ReceptionView.swift */; };
 		B745D36A269B2F45008A073D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D369269B2F45008A073D /* SettingView.swift */; };
 		B781336326B23E3200689A50 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781336226B23E3200689A50 /* FontExtension.swift */; };
@@ -82,6 +84,8 @@
 		B719AB4826CC451C000F5042 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		B719AB4A26D16D7C000F5042 /* SlackUsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackUsersRepository.swift; sourceTree = "<group>"; };
 		B719AB4C26D56166000F5042 /* VisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		B719AB5726DFF44F000F5042 /* .env.example */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.example; sourceTree = "<group>"; };
+		B719AB5926DFF477000F5042 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 		B745D367269A664C008A073D /* ReceptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionView.swift; sourceTree = "<group>"; };
 		B745D369269B2F45008A073D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		B781336226B23E3200689A50 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 		B78EB0082690D2E200E839A4 = {
 			isa = PBXGroup;
 			children = (
+				B719AB5926DFF477000F5042 /* .env */,
+				B719AB5726DFF44F000F5042 /* .env.example */,
 				B78EB0132690D2E300E839A4 /* receptionApp */,
 				B78EB0252690D2E600E839A4 /* receptionAppTests */,
 				B78EB0302690D2E600E839A4 /* receptionAppUITests */,
@@ -453,7 +459,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78EB01C2690D2E500E839A4 /* Preview Assets.xcassets in Resources */,
+				B719AB5826DFF44F000F5042 /* .env.example in Resources */,
 				B78EB0192690D2E500E839A4 /* Assets.xcassets in Resources */,
+				B719AB5A26DFF477000F5042 /* .env in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
