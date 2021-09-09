@@ -44,7 +44,7 @@ extension Color {
     static var altLightGray2: Color { Color(red: 247 / 255.0, green: 247 / 255.0, blue: 247 / 255.0, opacity: 1) }
 
     static var green1: Color { Color(red: 3 / 255.0, green: 170 / 255.0, blue: 148 / 255.0, opacity: 1) }
-
+    static var green2: Color { Color(red: 103 / 255.0, green: 218 / 255.0, blue: 49 / 255.0, opacity: 1) }
     static var blue: Color { Color(red: 3 / 255.0, green: 127 / 255.0, blue: 255 / 255.0, opacity: 1) }
     static var red: Color { Color(red: 222 / 255.0, green: 60 / 255.0, blue: 75 / 255.0, opacity: 1) }
 }
