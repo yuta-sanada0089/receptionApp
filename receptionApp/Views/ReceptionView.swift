@@ -8,7 +8,7 @@ struct ReceptionView: View {
             Spacer().frame(height: 70)
             Image("default_logo")
                 .resizable()
-                .scaledToFit()
+                .scaledToFill()
                 .frame(maxWidth: 730, maxHeight: 190)
             Spacer()
                 .frame(height: 16)
@@ -55,7 +55,7 @@ struct ReceptionButtonView: View {
                 .foregroundColor(.primaryTextColor)
                 .padding(8)
             Rectangle()
-                .foregroundColor(.linkTextColor)
+                .foregroundColor(.green1)
                 .frame(height: 3)
         }
         .padding(.horizontal, 30)
