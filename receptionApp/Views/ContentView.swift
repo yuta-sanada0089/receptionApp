@@ -17,7 +17,7 @@ struct ContentView: View {
                     VStack {
                         Image("default_logo")
                             .resizable()
-                            .scaledToFit()
+                            .scaledToFill()
                             .frame(maxWidth: 500, maxHeight: 450)
                             .padding(20)
                         Text("ご用の方は画面をタップしてください")

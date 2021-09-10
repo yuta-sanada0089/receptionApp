@@ -1,8 +1,15 @@
 import SwiftUI
 
 struct EntryView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        Text("Entry")
+        NavigationLink(destination: ContentView(), label: {
+            Text("next view")
+        })
+        Button("画面を閉じる") {
+            self.presentationMode.wrappedValue.dismiss()
+        }
     }
 }
 
