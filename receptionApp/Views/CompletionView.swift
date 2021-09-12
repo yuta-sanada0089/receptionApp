@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EntryView: View {
+struct CompletionView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -13,8 +13,8 @@ struct EntryView: View {
     }
 }
 
-struct EntryView_Previews: PreviewProvider {
+struct CompletionView_Previews: PreviewProvider {
     static var previews: some View {
-        EntryView()
+        CompletionView()
     }
 }

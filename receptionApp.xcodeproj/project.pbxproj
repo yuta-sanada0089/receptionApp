@@ -27,7 +27,7 @@
 		B781336726B495C900689A50 /* HideNavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781336626B495C900689A50 /* HideNavigationBarModifier.swift */; };
 		B781336926B735FD00689A50 /* ReceptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781336826B735FD00689A50 /* ReceptionButton.swift */; };
 		B781336C26B7377200689A50 /* ReceptionButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781336B26B7377200689A50 /* ReceptionButtonData.swift */; };
-		B781336E26B73BFE00689A50 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781336D26B73BFE00689A50 /* EntryView.swift */; };
+		B781336E26B73BFE00689A50 /* CompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781336D26B73BFE00689A50 /* CompletionView.swift */; };
 		B781337026B73C2300689A50 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781336F26B73C2300689A50 /* SearchView.swift */; };
 		B781337226B73CDF00689A50 /* ReceptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781337126B73CDF00689A50 /* ReceptionViewModel.swift */; };
 		B78EB0152690D2E300E839A4 /* receptionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0142690D2E300E839A4 /* receptionAppApp.swift */; };
@@ -95,7 +95,7 @@
 		B781336626B495C900689A50 /* HideNavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideNavigationBarModifier.swift; sourceTree = "<group>"; };
 		B781336826B735FD00689A50 /* ReceptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReceptionButton.swift; path = receptionApp/Domain/Models/ReceptionButton.swift; sourceTree = SOURCE_ROOT; };
 		B781336B26B7377200689A50 /* ReceptionButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionButtonData.swift; sourceTree = "<group>"; };
-		B781336D26B73BFE00689A50 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		B781336D26B73BFE00689A50 /* CompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionView.swift; sourceTree = "<group>"; };
 		B781336F26B73C2300689A50 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		B781337126B73CDF00689A50 /* ReceptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReceptionViewModel.swift; path = receptionApp/ViewModels/ReceptionViewModel.swift; sourceTree = SOURCE_ROOT; };
 		B78EB0112690D2E300E839A4 /* receptionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = receptionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -264,7 +264,7 @@
 				B78EB0162690D2E300E839A4 /* ContentView.swift */,
 				B745D367269A664C008A073D /* ReceptionView.swift */,
 				B745D369269B2F45008A073D /* SettingView.swift */,
-				B781336D26B73BFE00689A50 /* EntryView.swift */,
+				B781336D26B73BFE00689A50 /* CompletionView.swift */,
 				B781336F26B73C2300689A50 /* SearchView.swift */,
 				B7C42D6826BEEE2F00BBCC50 /* UserCardView.swift */,
 				B719AB4C26D56166000F5042 /* VisitorView.swift */,
@@ -497,7 +497,7 @@
 				B7C42D6926BEEE2F00BBCC50 /* UserCardView.swift in Sources */,
 				B719AB4B26D16D7C000F5042 /* SlackUsersRepository.swift in Sources */,
 				B719AB3C26C8582D000F5042 /* SlackConversationMembers.swift in Sources */,
-				B781336E26B73BFE00689A50 /* EntryView.swift in Sources */,
+				B781336E26B73BFE00689A50 /* CompletionView.swift in Sources */,
 				B7C42D7B26BF0B4800BBCC50 /* APIClient.swift in Sources */,
 				B781336926B735FD00689A50 /* ReceptionButton.swift in Sources */,
 				B745D368269A664C008A073D /* ReceptionView.swift in Sources */,
