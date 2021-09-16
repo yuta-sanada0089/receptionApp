@@ -66,9 +66,3 @@ struct ReceptionButtonView: View {
         .shadow(color: .dark26, radius: 4, x: 0, y: 0)
     }
 }
-
-struct ReceptionView_Previews: PreviewProvider {
-    static var previews: some View {
-        ReceptionView()
-    }
-}
