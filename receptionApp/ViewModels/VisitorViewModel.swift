@@ -3,8 +3,8 @@ import Combine
 
 class VisitorViewModel: ObservableObject {
     @Published var companyName: String = ""
-    @Published var firstName: String = ""
-    @Published var lastName: String = ""
+    @Published var visitorName: String = ""
+    @Published var guestCount: Int = 0
     @Published var isPushActive: Bool = false
     @Published var isAlertActive: Bool = false
     let buttonTapped = PassthroughSubject<Void, Never>()
@@ -12,12 +12,7 @@ class VisitorViewModel: ObservableObject {
     private var anyCancellable = Set<AnyCancellable>()
     
     func onTapButton() {
-        if firstName.count > 0 && lastName.count > 0 {
-            isPushActive = true
-            isAlertActive = false
-        } else {
-            isPushActive = false
-            isAlertActive = true
-        }
+        isPushActive = visitorName.count > 0
+        isAlertActive = visitorName.isEmpty
     }
 }
