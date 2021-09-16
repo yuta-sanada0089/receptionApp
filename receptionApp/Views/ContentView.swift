@@ -47,11 +47,3 @@ struct ContentView: View {
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .previewLayout(.device)
-            .previewDevice("iPad Pro (11-inch) (2nd generation)")
-    }
-}

@@ -28,9 +28,3 @@ struct SearchView: View {
         .hideNavigationBar()
     }
 }
-
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView()
-    }
-}
