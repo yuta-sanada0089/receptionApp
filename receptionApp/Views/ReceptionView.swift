@@ -34,7 +34,7 @@ struct ReceptionView: View {
     private func nextView(receptionButton: ReceptionButton) -> AnyView {
         switch receptionButton.buttonType {
         case "search": return AnyView(SearchView())
-        case "general", "interview": return AnyView(EntryView())
+        case "general", "interview": return AnyView(CompletionView(user: nil))
         default: return AnyView(SettingView())
         }
     }
