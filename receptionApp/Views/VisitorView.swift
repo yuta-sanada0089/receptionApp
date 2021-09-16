@@ -71,7 +71,7 @@ struct VisitorView: View {
             Alert(title: Text("お名前はフルネームでご入力ください"), message: nil, dismissButton: .default(Text("はい")))
         })
         NavigationLink(
-            destination: CompletionView(),
+            destination: CompletionView(user: user),
             isActive: $viewModel.isPushActive,
             label: {}
         )
