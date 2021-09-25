@@ -31,7 +31,7 @@ extension CreateEndpoint {
             baseURL: baseURL,
             path: path,
             method: .post,
-            headers: headers,
+            headers: ["Content-Type": "application/json"],
             parameters: parameters,
             token: token,
             version: version

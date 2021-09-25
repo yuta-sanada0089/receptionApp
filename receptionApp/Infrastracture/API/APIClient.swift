@@ -12,6 +12,12 @@ protocol APIClient: AnyObject,
 }
 
 extension APIClient {
+    func combineRequestVoid<E: ImmutableMappable>(target: Request<E>, callbackQueue: DispatchQueue? = nil) -> AnyPublisher<Void, Error> {
+        _request(target: target, callbackQueue: callbackQueue)
+            .map { _ in () }
+            .eraseToAnyPublisher()
+    }
+    
     func combineRequest<E: ImmutableMappable>(target: Request<E>, callbackQueue: DispatchQueue? = nil) -> AnyPublisher<E, Error> {
         _request(target: target, callbackQueue: callbackQueue)
             .map { try! Mapper<E>().map(JSONString: $0) }
