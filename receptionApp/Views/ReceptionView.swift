@@ -19,7 +19,7 @@ struct ReceptionView: View {
             Spacer()
                 .frame(height: 16)
             LazyVGrid(columns: columns, alignment: .center, spacing: 30, content: {
-                ForEach(viewModel.receptionButtons, id: \.title) { receptionButton in
+                ForEach(viewModel.receptionButtons, id: \.buttonType) { receptionButton in
                     NavigationLink(destination: nextView(receptionButton: receptionButton), label: {
                         ReceptionButtonView(receptionButton: receptionButton)
                     })
@@ -33,9 +33,10 @@ struct ReceptionView: View {
     
     private func nextView(receptionButton: ReceptionButton) -> AnyView {
         switch receptionButton.buttonType {
-        case "search": return AnyView(SearchView())
-        case "general", "interview": return AnyView(CompletionView(user: nil))
-        default: return AnyView(SettingView())
+        case .searchByName: return AnyView(SearchView())
+        case .general: return AnyView(VisitorView(user: nil, buttonType: .general))
+        case .interview: return AnyView(VisitorView(user: nil, buttonType: .interview))
+        default: return AnyView(ReceptionConfirmView(user: nil, buttonType: .general))
         }
     }
 }
@@ -44,13 +45,13 @@ struct ReceptionButtonView: View {
     var receptionButton: ReceptionButton
     var body: some View {
         VStack {
-            Text(receptionButton.title)
+            Text(receptionButton.buttonType.title())
                 .font(.defaultFont(ofSize: 24))
                 .foregroundColor(.primaryTextColor)
                 .padding(8)
             Divider()
                 .background(Color.borderColor)
-            Text(receptionButton.subTitle)
+            Text(receptionButton.buttonType.subTitle())
                 .font(.defaultFont(ofSize: 14))
                 .foregroundColor(.primaryTextColor)
                 .padding(8)
