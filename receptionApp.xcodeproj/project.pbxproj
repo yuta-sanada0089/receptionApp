@@ -40,6 +40,10 @@
 		B78EB04C269257AB00E839A4 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB04B269257AB00E839A4 /* APIError.swift */; };
 		B78EB04E2692585600E839A4 /* APIErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB04D2692585600E839A4 /* APIErrorResponse.swift */; };
 		B7AE8C0426F31D7600304B6C /* EnvironmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE8C0326F31D7600304B6C /* EnvironmentViewModel.swift */; };
+		B7AE8C0626F349EA00304B6C /* ReceptionConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE8C0526F349EA00304B6C /* ReceptionConfirmView.swift */; };
+		B7B7C2B926F380F800B803F0 /* ReceptionConfirmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7C2B826F380F800B803F0 /* ReceptionConfirmViewModel.swift */; };
+		B7B7C2BB26F3A43B00B803F0 /* SlackChatPostMessageEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7C2BA26F3A43B00B803F0 /* SlackChatPostMessageEndpoint.swift */; };
+		B7B7C2BF26F3A6BC00B803F0 /* SlackChatPostMessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7C2BE26F3A6BC00B803F0 /* SlackChatPostMessageRepository.swift */; };
 		B7C42D6926BEEE2F00BBCC50 /* UserCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C42D6826BEEE2F00BBCC50 /* UserCardView.swift */; };
 		B7C42D6B26BEEFEC00BBCC50 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C42D6A26BEEFEC00BBCC50 /* SearchViewModel.swift */; };
 		B7C42D6F26BF026400BBCC50 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B7C42D6E26BF026400BBCC50 /* ReactiveMoya */; };
@@ -115,6 +119,10 @@
 		B78EB04B269257AB00E839A4 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		B78EB04D2692585600E839A4 /* APIErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorResponse.swift; sourceTree = "<group>"; };
 		B7AE8C0326F31D7600304B6C /* EnvironmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentViewModel.swift; sourceTree = "<group>"; };
+		B7AE8C0526F349EA00304B6C /* ReceptionConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionConfirmView.swift; sourceTree = "<group>"; };
+		B7B7C2B826F380F800B803F0 /* ReceptionConfirmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionConfirmViewModel.swift; sourceTree = "<group>"; };
+		B7B7C2BA26F3A43B00B803F0 /* SlackChatPostMessageEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackChatPostMessageEndpoint.swift; sourceTree = "<group>"; };
+		B7B7C2BE26F3A6BC00B803F0 /* SlackChatPostMessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackChatPostMessageRepository.swift; sourceTree = "<group>"; };
 		B7C42D6826BEEE2F00BBCC50 /* UserCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardView.swift; sourceTree = "<group>"; };
 		B7C42D6A26BEEFEC00BBCC50 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		B7C42D7626BF036C00BBCC50 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -163,6 +171,7 @@
 			children = (
 				B719AB3926C8570E000F5042 /* SlackConversationEndpoint.swift */,
 				B719AB4226CC42FD000F5042 /* SlackUsersEndpoint.swift */,
+				B7B7C2BA26F3A43B00B803F0 /* SlackChatPostMessageEndpoint.swift */,
 			);
 			path = APIEndpoint;
 			sourceTree = "<group>";
@@ -270,6 +279,7 @@
 				B781336F26B73C2300689A50 /* SearchView.swift */,
 				B7C42D6826BEEE2F00BBCC50 /* UserCardView.swift */,
 				B719AB4C26D56166000F5042 /* VisitorView.swift */,
+				B7AE8C0526F349EA00304B6C /* ReceptionConfirmView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +291,7 @@
 				B7C42D6A26BEEFEC00BBCC50 /* SearchViewModel.swift */,
 				B719AB5B26DFFBEF000F5042 /* VisitorViewModel.swift */,
 				B7AE8C0326F31D7600304B6C /* EnvironmentViewModel.swift */,
+				B7B7C2B826F380F800B803F0 /* ReceptionConfirmViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -336,6 +347,7 @@
 				B719AB3F26CC3898000F5042 /* Protocols */,
 				B719AB3D26CC3856000F5042 /* SlackConversationRepository.swift */,
 				B719AB4A26D16D7C000F5042 /* SlackUsersRepository.swift */,
+				B7B7C2BE26F3A6BC00B803F0 /* SlackChatPostMessageRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -498,17 +510,20 @@
 				B7C42D8B26BF2B1800BBCC50 /* RuntimeError.swift in Sources */,
 				B719AB5C26DFFBEF000F5042 /* VisitorViewModel.swift in Sources */,
 				B7C42D6926BEEE2F00BBCC50 /* UserCardView.swift in Sources */,
+				B7B7C2BB26F3A43B00B803F0 /* SlackChatPostMessageEndpoint.swift in Sources */,
 				B719AB4B26D16D7C000F5042 /* SlackUsersRepository.swift in Sources */,
 				B719AB3C26C8582D000F5042 /* SlackConversationMembers.swift in Sources */,
 				B781336E26B73BFE00689A50 /* CompletionView.swift in Sources */,
 				B7C42D7B26BF0B4800BBCC50 /* APIClient.swift in Sources */,
 				B781336926B735FD00689A50 /* ReceptionButton.swift in Sources */,
 				B745D368269A664C008A073D /* ReceptionView.swift in Sources */,
+				B7AE8C0626F349EA00304B6C /* ReceptionConfirmView.swift in Sources */,
 				B781336C26B7377200689A50 /* ReceptionButtonData.swift in Sources */,
 				B781337226B73CDF00689A50 /* ReceptionViewModel.swift in Sources */,
 				B7C42D7726BF036C00BBCC50 /* Request.swift in Sources */,
 				B78EB0442690DCA600E839A4 /* ColorExtension.swift in Sources */,
 				B719AB4D26D56166000F5042 /* VisitorView.swift in Sources */,
+				B7B7C2BF26F3A6BC00B803F0 /* SlackChatPostMessageRepository.swift in Sources */,
 				B781336326B23E3200689A50 /* FontExtension.swift in Sources */,
 				B7AE8C0426F31D7600304B6C /* EnvironmentViewModel.swift in Sources */,
 				B78EB04C269257AB00E839A4 /* APIError.swift in Sources */,
@@ -520,6 +535,7 @@
 				B745D36A269B2F45008A073D /* SettingView.swift in Sources */,
 				B7C42D7926BF06A600BBCC50 /* Endpoint.swift in Sources */,
 				B719AB3A26C8570E000F5042 /* SlackConversationEndpoint.swift in Sources */,
+				B7B7C2B926F380F800B803F0 /* ReceptionConfirmViewModel.swift in Sources */,
 				B719AB4526CC4351000F5042 /* SlackUsers.swift in Sources */,
 				B781336726B495C900689A50 /* HideNavigationBarModifier.swift in Sources */,
 				B781337026B73C2300689A50 /* SearchView.swift in Sources */,
