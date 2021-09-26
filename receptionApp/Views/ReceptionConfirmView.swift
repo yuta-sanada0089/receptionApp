@@ -6,8 +6,8 @@ struct ReceptionConfirmView: View {
     init(
         user: User?,
         buttonType: ButtonType,
-        visitorName: String = "",
-        companyName: String? = nil,
+        visitorName: String = "お客",
+        companyName: String = "",
         guestCount: Int = 0
     ) {
         self.viewModel = ReceptionConfirmViewModel(

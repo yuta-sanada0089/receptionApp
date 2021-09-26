@@ -36,7 +36,7 @@ struct ReceptionView: View {
         case .searchByName: return AnyView(SearchView())
         case .general: return AnyView(VisitorView(user: nil, buttonType: .general))
         case .interview: return AnyView(VisitorView(user: nil, buttonType: .interview))
-        default: return AnyView(ReceptionConfirmView(user: nil, buttonType: .general))
+        case .delivery: return AnyView(ReceptionConfirmView(user: nil, buttonType: .delivery))
         }
     }
 }

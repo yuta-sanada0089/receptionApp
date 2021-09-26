@@ -6,13 +6,13 @@ class ReceptionConfirmViewModel: ObservableObject, DepecdsOnSlackChatPostMessage
     @Published var error: Error?
     @Published var user: User?
     @Published var buttonType: ButtonType
-    @Published var companyName: String?
+    @Published var companyName: String
     @Published var visitorName: String
     @Published var guestCount: Int
     let channelId = ProcessInfo.processInfo.environment["SLACK_CHANNEL_ID"]!
     var cancellables = [AnyCancellable]()
     
-    init(buttonType: ButtonType, user: User?, companyName: String?, visitorName: String, guestCount: Int) {
+    init(buttonType: ButtonType, user: User?, companyName: String, visitorName: String, guestCount: Int) {
         isPushActive = false
         self.buttonType = buttonType
         self.user = user
@@ -37,7 +37,9 @@ class ReceptionConfirmViewModel: ObservableObject, DepecdsOnSlackChatPostMessage
     }
     
     private func text() -> String {
-        // <@メンバーID>
-        return "<!here>\n\(visitorName)が来られました"
+        let mention = user != nil ? "<@\(user?.id ?? "")>" : "<!here>"
+        let companyText = !companyName.isEmpty ? " *\(companyName)* の" : ""
+        let guestCountText = guestCount != 0 ? " *\(guestCount)* 名で" : ""
+        return "\(mention)\n *「\(buttonType.title())」* ボタンから\(companyText) *\(visitorName)* 様が\(guestCountText)来られました"
     }
 }
