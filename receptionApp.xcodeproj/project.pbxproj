@@ -39,7 +39,7 @@
 		B78EB0442690DCA600E839A4 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0432690DCA600E839A4 /* ColorExtension.swift */; };
 		B78EB04C269257AB00E839A4 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB04B269257AB00E839A4 /* APIError.swift */; };
 		B78EB04E2692585600E839A4 /* APIErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB04D2692585600E839A4 /* APIErrorResponse.swift */; };
-		B794C1E92700E82100138D69 /* SlackChatPostMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794C1E82700E82100138D69 /* SlackChatPostMessage.swift */; };
+		B794C1EB2700E8D900138D69 /* SlackChatPostMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794C1EA2700E8D900138D69 /* SlackChatPostMessage.swift */; };
 		B7AE8C0426F31D7600304B6C /* EnvironmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE8C0326F31D7600304B6C /* EnvironmentViewModel.swift */; };
 		B7AE8C0626F349EA00304B6C /* ReceptionConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE8C0526F349EA00304B6C /* ReceptionConfirmView.swift */; };
 		B7B7C2B926F380F800B803F0 /* ReceptionConfirmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7C2B826F380F800B803F0 /* ReceptionConfirmViewModel.swift */; };
@@ -119,7 +119,7 @@
 		B78EB0432690DCA600E839A4 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		B78EB04B269257AB00E839A4 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		B78EB04D2692585600E839A4 /* APIErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorResponse.swift; sourceTree = "<group>"; };
-		B794C1E82700E82100138D69 /* SlackChatPostMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlackChatPostMessage.swift; path = ../../../../../.Trash/SlackChatPostMessage.swift; sourceTree = "<group>"; };
+		B794C1EA2700E8D900138D69 /* SlackChatPostMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackChatPostMessage.swift; sourceTree = "<group>"; };
 		B7AE8C0326F31D7600304B6C /* EnvironmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentViewModel.swift; sourceTree = "<group>"; };
 		B7AE8C0526F349EA00304B6C /* ReceptionConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionConfirmView.swift; sourceTree = "<group>"; };
 		B7B7C2B826F380F800B803F0 /* ReceptionConfirmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionConfirmViewModel.swift; sourceTree = "<group>"; };
@@ -263,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				B781336826B735FD00689A50 /* ReceptionButton.swift */,
-				B794C1E82700E82100138D69 /* SlackChatPostMessage.swift */,
+				B794C1EA2700E8D900138D69 /* SlackChatPostMessage.swift */,
 				B719AB3B26C8582D000F5042 /* SlackConversationMembers.swift */,
 				B719AB4426CC4351000F5042 /* SlackUsers.swift */,
 				B719AB4626CC43AA000F5042 /* User.swift */,
@@ -544,7 +544,7 @@
 				B781337026B73C2300689A50 /* SearchView.swift in Sources */,
 				B719AB3E26CC3856000F5042 /* SlackConversationRepository.swift in Sources */,
 				B78EB0172690D2E300E839A4 /* ContentView.swift in Sources */,
-				B794C1E92700E82100138D69 /* SlackChatPostMessage.swift in Sources */,
+				B794C1EB2700E8D900138D69 /* SlackChatPostMessage.swift in Sources */,
 				B7C42D6B26BEEFEC00BBCC50 /* SearchViewModel.swift in Sources */,
 				B78EB04E2692585600E839A4 /* APIErrorResponse.swift in Sources */,
 				B7C42D8926BF0E7900BBCC50 /* APITarget.swift in Sources */,
