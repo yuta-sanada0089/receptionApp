@@ -112,7 +112,7 @@ struct VisitorView: View {
                 user: user,
                 buttonType: buttonType,
                 visitorName: viewModel.visitorName,
-                visitorCompanyName: viewModel.companyName,
+                companyName: viewModel.companyName,
                 guestCount: viewModel.guestCount
             ),
             isActive: $viewModel.isPushActive,
