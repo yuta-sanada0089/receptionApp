@@ -4,7 +4,7 @@ struct UserCardView: View {
     let user: User
     
     var body: some View {
-        NavigationLink(destination: VisitorView(user: user), label: {
+        NavigationLink(destination: VisitorView(user: user, buttonType: .searchByName), label: {
             HStack(spacing: 8.0) {
                 Image(uiImage: user.profile.displayImage)
                     .resizable()

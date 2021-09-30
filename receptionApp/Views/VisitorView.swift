@@ -2,6 +2,7 @@ import SwiftUI
 
 struct VisitorView: View {
     let user: User?
+    let buttonType: ButtonType
     @ObservedObject private var viewModel = VisitorViewModel()
     
     var body: some View {
@@ -93,7 +94,7 @@ struct VisitorView: View {
             Button(
                 action: { viewModel.onTapButton() },
                 label: {
-                    Text(user != nil ? (user?.realName)! + "の呼び出し" : "呼び出し")
+                    Text("次へ")
                         .frame(width: 455, height: 135, alignment: .center)
                         .font(.defaultFont(ofSize: 24))
                         .foregroundColor(.linkTextColor)
@@ -107,7 +108,13 @@ struct VisitorView: View {
         .frame(width: 930)
         .compositingGroup()
         NavigationLink(
-            destination: CompletionView(user: user),
+            destination: ReceptionConfirmView(
+                user: user,
+                buttonType: buttonType,
+                visitorName: viewModel.visitorName,
+                companyName: viewModel.companyName,
+                guestCount: viewModel.guestCount
+            ),
             isActive: $viewModel.isPushActive,
             label: {}
         )

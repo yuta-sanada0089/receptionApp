@@ -22,6 +22,8 @@
 		B719AB5C26DFFBEF000F5042 /* VisitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB5B26DFFBEF000F5042 /* VisitorViewModel.swift */; };
 		B745D368269A664C008A073D /* ReceptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D367269A664C008A073D /* ReceptionView.swift */; };
 		B745D36A269B2F45008A073D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D369269B2F45008A073D /* SettingView.swift */; };
+		B7572E2627059F4E00A83B86 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B7572E2527059F4E00A83B86 /* CombineMoya */; };
+		B7572E2827059F4E00A83B86 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B7572E2727059F4E00A83B86 /* Moya */; };
 		B781336326B23E3200689A50 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781336226B23E3200689A50 /* FontExtension.swift */; };
 		B781336526B494BC00689A50 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781336426B494BC00689A50 /* ViewExtension.swift */; };
 		B781336726B495C900689A50 /* HideNavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B781336626B495C900689A50 /* HideNavigationBarModifier.swift */; };
@@ -39,13 +41,14 @@
 		B78EB0442690DCA600E839A4 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB0432690DCA600E839A4 /* ColorExtension.swift */; };
 		B78EB04C269257AB00E839A4 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB04B269257AB00E839A4 /* APIError.swift */; };
 		B78EB04E2692585600E839A4 /* APIErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB04D2692585600E839A4 /* APIErrorResponse.swift */; };
+		B794C1EB2700E8D900138D69 /* SlackChatPostMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B794C1EA2700E8D900138D69 /* SlackChatPostMessage.swift */; };
 		B7AE8C0426F31D7600304B6C /* EnvironmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE8C0326F31D7600304B6C /* EnvironmentViewModel.swift */; };
+		B7AE8C0626F349EA00304B6C /* ReceptionConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE8C0526F349EA00304B6C /* ReceptionConfirmView.swift */; };
+		B7B7C2B926F380F800B803F0 /* ReceptionConfirmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7C2B826F380F800B803F0 /* ReceptionConfirmViewModel.swift */; };
+		B7B7C2BB26F3A43B00B803F0 /* SlackChatPostMessageEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7C2BA26F3A43B00B803F0 /* SlackChatPostMessageEndpoint.swift */; };
+		B7B7C2BF26F3A6BC00B803F0 /* SlackChatPostMessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B7C2BE26F3A6BC00B803F0 /* SlackChatPostMessageRepository.swift */; };
 		B7C42D6926BEEE2F00BBCC50 /* UserCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C42D6826BEEE2F00BBCC50 /* UserCardView.swift */; };
 		B7C42D6B26BEEFEC00BBCC50 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C42D6A26BEEFEC00BBCC50 /* SearchViewModel.swift */; };
-		B7C42D6F26BF026400BBCC50 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B7C42D6E26BF026400BBCC50 /* ReactiveMoya */; };
-		B7C42D7126BF026400BBCC50 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B7C42D7026BF026400BBCC50 /* CombineMoya */; };
-		B7C42D7326BF026400BBCC50 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B7C42D7226BF026400BBCC50 /* RxMoya */; };
-		B7C42D7526BF026400BBCC50 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B7C42D7426BF026400BBCC50 /* Moya */; };
 		B7C42D7726BF036C00BBCC50 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C42D7626BF036C00BBCC50 /* Request.swift */; };
 		B7C42D7926BF06A600BBCC50 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C42D7826BF06A600BBCC50 /* Endpoint.swift */; };
 		B7C42D7B26BF0B4800BBCC50 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C42D7A26BF0B4800BBCC50 /* APIClient.swift */; };
@@ -114,7 +117,12 @@
 		B78EB0432690DCA600E839A4 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		B78EB04B269257AB00E839A4 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		B78EB04D2692585600E839A4 /* APIErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorResponse.swift; sourceTree = "<group>"; };
+		B794C1EA2700E8D900138D69 /* SlackChatPostMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlackChatPostMessage.swift; sourceTree = "<group>"; };
 		B7AE8C0326F31D7600304B6C /* EnvironmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentViewModel.swift; sourceTree = "<group>"; };
+		B7AE8C0526F349EA00304B6C /* ReceptionConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionConfirmView.swift; sourceTree = "<group>"; };
+		B7B7C2B826F380F800B803F0 /* ReceptionConfirmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionConfirmViewModel.swift; sourceTree = "<group>"; };
+		B7B7C2BA26F3A43B00B803F0 /* SlackChatPostMessageEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackChatPostMessageEndpoint.swift; sourceTree = "<group>"; };
+		B7B7C2BE26F3A6BC00B803F0 /* SlackChatPostMessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackChatPostMessageRepository.swift; sourceTree = "<group>"; };
 		B7C42D6826BEEE2F00BBCC50 /* UserCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCardView.swift; sourceTree = "<group>"; };
 		B7C42D6A26BEEFEC00BBCC50 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		B7C42D7626BF036C00BBCC50 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -133,11 +141,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7C42D6F26BF026400BBCC50 /* ReactiveMoya in Frameworks */,
+				B7572E2627059F4E00A83B86 /* CombineMoya in Frameworks */,
 				B7C42D7E26BF0BB500BBCC50 /* ObjectMapper in Frameworks */,
-				B7C42D7326BF026400BBCC50 /* RxMoya in Frameworks */,
-				B7C42D7526BF026400BBCC50 /* Moya in Frameworks */,
-				B7C42D7126BF026400BBCC50 /* CombineMoya in Frameworks */,
+				B7572E2827059F4E00A83B86 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +169,7 @@
 			children = (
 				B719AB3926C8570E000F5042 /* SlackConversationEndpoint.swift */,
 				B719AB4226CC42FD000F5042 /* SlackUsersEndpoint.swift */,
+				B7B7C2BA26F3A43B00B803F0 /* SlackChatPostMessageEndpoint.swift */,
 			);
 			path = APIEndpoint;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				B781336826B735FD00689A50 /* ReceptionButton.swift */,
+				B794C1EA2700E8D900138D69 /* SlackChatPostMessage.swift */,
 				B719AB3B26C8582D000F5042 /* SlackConversationMembers.swift */,
 				B719AB4426CC4351000F5042 /* SlackUsers.swift */,
 				B719AB4626CC43AA000F5042 /* User.swift */,
@@ -270,6 +278,7 @@
 				B781336F26B73C2300689A50 /* SearchView.swift */,
 				B7C42D6826BEEE2F00BBCC50 /* UserCardView.swift */,
 				B719AB4C26D56166000F5042 /* VisitorView.swift */,
+				B7AE8C0526F349EA00304B6C /* ReceptionConfirmView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +290,7 @@
 				B7C42D6A26BEEFEC00BBCC50 /* SearchViewModel.swift */,
 				B719AB5B26DFFBEF000F5042 /* VisitorViewModel.swift */,
 				B7AE8C0326F31D7600304B6C /* EnvironmentViewModel.swift */,
+				B7B7C2B826F380F800B803F0 /* ReceptionConfirmViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -336,6 +346,7 @@
 				B719AB3F26CC3898000F5042 /* Protocols */,
 				B719AB3D26CC3856000F5042 /* SlackConversationRepository.swift */,
 				B719AB4A26D16D7C000F5042 /* SlackUsersRepository.swift */,
+				B7B7C2BE26F3A6BC00B803F0 /* SlackChatPostMessageRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -367,11 +378,9 @@
 			);
 			name = receptionApp;
 			packageProductDependencies = (
-				B7C42D6E26BF026400BBCC50 /* ReactiveMoya */,
-				B7C42D7026BF026400BBCC50 /* CombineMoya */,
-				B7C42D7226BF026400BBCC50 /* RxMoya */,
-				B7C42D7426BF026400BBCC50 /* Moya */,
 				B7C42D7D26BF0BB500BBCC50 /* ObjectMapper */,
+				B7572E2527059F4E00A83B86 /* CombineMoya */,
+				B7572E2727059F4E00A83B86 /* Moya */,
 			);
 			productName = entranceApp;
 			productReference = B78EB0112690D2E300E839A4 /* receptionApp.app */;
@@ -445,8 +454,8 @@
 			);
 			mainGroup = B78EB0082690D2E200E839A4;
 			packageReferences = (
-				B7C42D6D26BF026400BBCC50 /* XCRemoteSwiftPackageReference "Moya" */,
 				B7C42D7C26BF0BB500BBCC50 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				B7572E2427059F4E00A83B86 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = B78EB0122690D2E300E839A4 /* Products */;
 			projectDirPath = "";
@@ -498,17 +507,20 @@
 				B7C42D8B26BF2B1800BBCC50 /* RuntimeError.swift in Sources */,
 				B719AB5C26DFFBEF000F5042 /* VisitorViewModel.swift in Sources */,
 				B7C42D6926BEEE2F00BBCC50 /* UserCardView.swift in Sources */,
+				B7B7C2BB26F3A43B00B803F0 /* SlackChatPostMessageEndpoint.swift in Sources */,
 				B719AB4B26D16D7C000F5042 /* SlackUsersRepository.swift in Sources */,
 				B719AB3C26C8582D000F5042 /* SlackConversationMembers.swift in Sources */,
 				B781336E26B73BFE00689A50 /* CompletionView.swift in Sources */,
 				B7C42D7B26BF0B4800BBCC50 /* APIClient.swift in Sources */,
 				B781336926B735FD00689A50 /* ReceptionButton.swift in Sources */,
 				B745D368269A664C008A073D /* ReceptionView.swift in Sources */,
+				B7AE8C0626F349EA00304B6C /* ReceptionConfirmView.swift in Sources */,
 				B781336C26B7377200689A50 /* ReceptionButtonData.swift in Sources */,
 				B781337226B73CDF00689A50 /* ReceptionViewModel.swift in Sources */,
 				B7C42D7726BF036C00BBCC50 /* Request.swift in Sources */,
 				B78EB0442690DCA600E839A4 /* ColorExtension.swift in Sources */,
 				B719AB4D26D56166000F5042 /* VisitorView.swift in Sources */,
+				B7B7C2BF26F3A6BC00B803F0 /* SlackChatPostMessageRepository.swift in Sources */,
 				B781336326B23E3200689A50 /* FontExtension.swift in Sources */,
 				B7AE8C0426F31D7600304B6C /* EnvironmentViewModel.swift in Sources */,
 				B78EB04C269257AB00E839A4 /* APIError.swift in Sources */,
@@ -520,11 +532,13 @@
 				B745D36A269B2F45008A073D /* SettingView.swift in Sources */,
 				B7C42D7926BF06A600BBCC50 /* Endpoint.swift in Sources */,
 				B719AB3A26C8570E000F5042 /* SlackConversationEndpoint.swift in Sources */,
+				B7B7C2B926F380F800B803F0 /* ReceptionConfirmViewModel.swift in Sources */,
 				B719AB4526CC4351000F5042 /* SlackUsers.swift in Sources */,
 				B781336726B495C900689A50 /* HideNavigationBarModifier.swift in Sources */,
 				B781337026B73C2300689A50 /* SearchView.swift in Sources */,
 				B719AB3E26CC3856000F5042 /* SlackConversationRepository.swift in Sources */,
 				B78EB0172690D2E300E839A4 /* ContentView.swift in Sources */,
+				B794C1EB2700E8D900138D69 /* SlackChatPostMessage.swift in Sources */,
 				B7C42D6B26BEEFEC00BBCC50 /* SearchViewModel.swift in Sources */,
 				B78EB04E2692585600E839A4 /* APIErrorResponse.swift in Sources */,
 				B7C42D8926BF0E7900BBCC50 /* APITarget.swift in Sources */,
@@ -851,12 +865,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B7C42D6D26BF026400BBCC50 /* XCRemoteSwiftPackageReference "Moya" */ = {
+		B7572E2427059F4E00A83B86 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
-				kind = revision;
-				revision = e5a28fb62dd5ff4e17b7025643366550044a40b0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
 			};
 		};
 		B7C42D7C26BF0BB500BBCC50 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
@@ -870,24 +884,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B7C42D6E26BF026400BBCC50 /* ReactiveMoya */ = {
+		B7572E2527059F4E00A83B86 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B7C42D6D26BF026400BBCC50 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = ReactiveMoya;
-		};
-		B7C42D7026BF026400BBCC50 /* CombineMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B7C42D6D26BF026400BBCC50 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = B7572E2427059F4E00A83B86 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = CombineMoya;
 		};
-		B7C42D7226BF026400BBCC50 /* RxMoya */ = {
+		B7572E2727059F4E00A83B86 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B7C42D6D26BF026400BBCC50 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = RxMoya;
-		};
-		B7C42D7426BF026400BBCC50 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B7C42D6D26BF026400BBCC50 /* XCRemoteSwiftPackageReference "Moya" */;
+			package = B7572E2427059F4E00A83B86 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
 		};
 		B7C42D7D26BF0BB500BBCC50 /* ObjectMapper */ = {
