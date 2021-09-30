@@ -65,8 +65,6 @@ extension APIClient {
             response.request?.httpMethod ?? "",
             response.request?.url?.absoluteString ?? "",
             String(response.statusCode),
-            // response.request?.allHTTPHeaderFields?.map { "\($0.key): \($0.value)" }.joined(separator: " / ") ?? "",
-            // "\(try? response.mapJSON())"
             (try? response.mapString()) ?? ""
         ].joined(separator: " ")
 
