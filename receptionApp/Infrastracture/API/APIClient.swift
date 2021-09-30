@@ -77,7 +77,7 @@ class APIClientImpl: APIClient {
     fileprivate static let instance = APIClientImpl()
 
     let queue = DispatchQueue(
-        label: "com.seibii.Seibii.APIClient",
+        label: "com.sanada.receptionApp.APIClient",
         qos: .default,
         attributes: DispatchQueue.Attributes.concurrent
     )
