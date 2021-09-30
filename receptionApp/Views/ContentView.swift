@@ -36,13 +36,6 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(trailing:
-                NavigationLink(destination: SettingView(), label: {
-                    Image("ic-setting")
-                        .resizable()
-                        .frame(width: 20, height: 20, alignment: .center)
-                })
-            )
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
