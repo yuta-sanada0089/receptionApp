@@ -28,10 +28,14 @@ class ReceptionConfirmViewModel: ObservableObject, DepecdsOnSlackChatPostMessage
                 switch completion {
                 case .finished: break
                 case .failure(let error):
-                    self.error = error
+                    DispatchQueue.main.async {
+                        self.error = error
+                    }
                 }
-            }, receiveValue: { _ in
-                self.isPushActive = true
+            }, receiveValue: {
+                DispatchQueue.main.async {
+                    self.isPushActive = true
+                }
             })
             .store(in: &cancellables)
     }
@@ -40,6 +44,6 @@ class ReceptionConfirmViewModel: ObservableObject, DepecdsOnSlackChatPostMessage
         let mention = user != nil ? "<@\(user?.id ?? "")>" : "<!here>"
         let companyText = !companyName.isEmpty ? " *\(companyName)* の" : ""
         let guestCountText = guestCount != 0 ? " *\(guestCount)* 名で" : ""
-        return "\(mention)\n *「\(buttonType.title())」* ボタンから\(companyText) *\(visitorName)* 様が\(guestCountText)来られました"
+        return "\(mention)\n *「\(buttonType.title())」* ボタンから\(companyText) *\(visitorName)様* が\(guestCountText)来社されました"
     }
 }
