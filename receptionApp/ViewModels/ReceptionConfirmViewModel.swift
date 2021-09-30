@@ -9,7 +9,6 @@ class ReceptionConfirmViewModel: ObservableObject, DepecdsOnSlackChatPostMessage
     @Published var companyName: String
     @Published var visitorName: String
     @Published var guestCount: Int
-    let channelId = ProcessInfo.processInfo.environment["SLACK_CHANNEL_ID"]!
     var cancellables = [AnyCancellable]()
     
     init(buttonType: ButtonType, user: User?, companyName: String, visitorName: String, guestCount: Int) {

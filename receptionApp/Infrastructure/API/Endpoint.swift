@@ -18,7 +18,7 @@ class APIEndpoint {
 class SlackEndpoint {
     var baseURL: URL = URL(string: "https://slack.com/api")!
     var headers: [String: String]? = ["Content-Type": "application/x-www-form-urlencoded"]
-    var token: String? = ProcessInfo.processInfo.environment["SLACK_TOKEN"]!
+    var token: String? = slackAccessToken
 }
 
 protocol CreateEndpoint: Endpoint {

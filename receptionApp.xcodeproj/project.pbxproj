@@ -17,9 +17,8 @@
 		B719AB4926CC451C000F5042 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB4826CC451C000F5042 /* Profile.swift */; };
 		B719AB4B26D16D7C000F5042 /* SlackUsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB4A26D16D7C000F5042 /* SlackUsersRepository.swift */; };
 		B719AB4D26D56166000F5042 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB4C26D56166000F5042 /* VisitorView.swift */; };
-		B719AB5826DFF44F000F5042 /* .env.example in Resources */ = {isa = PBXBuildFile; fileRef = B719AB5726DFF44F000F5042 /* .env.example */; };
-		B719AB5A26DFF477000F5042 /* .env in Resources */ = {isa = PBXBuildFile; fileRef = B719AB5926DFF477000F5042 /* .env */; };
 		B719AB5C26DFFBEF000F5042 /* VisitorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB5B26DFFBEF000F5042 /* VisitorViewModel.swift */; };
+		B71F81E92705D0FF00428305 /* SlackAccessTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F81E82705D0FF00428305 /* SlackAccessTokens.swift */; };
 		B745D368269A664C008A073D /* ReceptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D367269A664C008A073D /* ReceptionView.swift */; };
 		B7572E2627059F4E00A83B86 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B7572E2527059F4E00A83B86 /* CombineMoya */; };
 		B7572E2827059F4E00A83B86 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B7572E2727059F4E00A83B86 /* Moya */; };
@@ -88,9 +87,8 @@
 		B719AB4826CC451C000F5042 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		B719AB4A26D16D7C000F5042 /* SlackUsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackUsersRepository.swift; sourceTree = "<group>"; };
 		B719AB4C26D56166000F5042 /* VisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
-		B719AB5726DFF44F000F5042 /* .env.example */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env.example; sourceTree = "<group>"; };
-		B719AB5926DFF477000F5042 /* .env */ = {isa = PBXFileReference; lastKnownFileType = text; path = .env; sourceTree = "<group>"; };
 		B719AB5B26DFFBEF000F5042 /* VisitorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorViewModel.swift; sourceTree = "<group>"; };
+		B71F81E82705D0FF00428305 /* SlackAccessTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackAccessTokens.swift; sourceTree = "<group>"; };
 		B745D367269A664C008A073D /* ReceptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionView.swift; sourceTree = "<group>"; };
 		B781336226B23E3200689A50 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		B781336426B494BC00689A50 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
@@ -191,8 +189,6 @@
 		B78EB0082690D2E200E839A4 = {
 			isa = PBXGroup;
 			children = (
-				B719AB5926DFF477000F5042 /* .env */,
-				B719AB5726DFF44F000F5042 /* .env.example */,
 				B78EB0132690D2E300E839A4 /* receptionApp */,
 				B78EB0252690D2E600E839A4 /* receptionAppTests */,
 				B78EB0302690D2E600E839A4 /* receptionAppUITests */,
@@ -214,12 +210,13 @@
 			isa = PBXGroup;
 			children = (
 				B7C42D7F26BF0BFF00BBCC50 /* Core */,
-				B78EB0462692471D00E839A4 /* Infrastracture */,
+				B78EB0462692471D00E839A4 /* Infrastructure */,
 				B78EB0452692470D00E839A4 /* Domain */,
 				B78EB0422690DC5F00E839A4 /* Extension */,
 				B78EB0402690D83800E839A4 /* Views */,
 				B78EB0412690D84B00E839A4 /* ViewModels */,
 				B78EB0142690D2E300E839A4 /* receptionAppApp.swift */,
+				B71F81E82705D0FF00428305 /* SlackAccessTokens.swift */,
 				B78EB0182690D2E500E839A4 /* Assets.xcassets */,
 				B78EB01D2690D2E500E839A4 /* Info.plist */,
 				B78EB01A2690D2E500E839A4 /* Preview Content */,
@@ -315,12 +312,12 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		B78EB0462692471D00E839A4 /* Infrastracture */ = {
+		B78EB0462692471D00E839A4 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
 				B78EB04A2692578E00E839A4 /* API */,
 			);
-			path = Infrastracture;
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		B78EB04A2692578E00E839A4 /* API */ = {
@@ -471,9 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78EB01C2690D2E500E839A4 /* Preview Assets.xcassets in Resources */,
-				B719AB5826DFF44F000F5042 /* .env.example in Resources */,
 				B78EB0192690D2E500E839A4 /* Assets.xcassets in Resources */,
-				B719AB5A26DFF477000F5042 /* .env in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +533,7 @@
 				B7C42D6B26BEEFEC00BBCC50 /* SearchViewModel.swift in Sources */,
 				B78EB04E2692585600E839A4 /* APIErrorResponse.swift in Sources */,
 				B7C42D8926BF0E7900BBCC50 /* APITarget.swift in Sources */,
+				B71F81E92705D0FF00428305 /* SlackAccessTokens.swift in Sources */,
 				B78EB0152690D2E300E839A4 /* receptionAppApp.swift in Sources */,
 				B719AB4726CC43AA000F5042 /* User.swift in Sources */,
 			);
