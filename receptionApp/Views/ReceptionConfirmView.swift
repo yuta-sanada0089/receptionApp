@@ -1,23 +1,7 @@
 import SwiftUI
 
 struct ReceptionConfirmView: View {
-    @ObservedObject private var viewModel: ReceptionConfirmViewModel
-    
-    init(
-        user: User?,
-        buttonType: ButtonType,
-        visitorName: String = "お客",
-        companyName: String = "",
-        guestCount: Int = 0
-    ) {
-        self.viewModel = ReceptionConfirmViewModel(
-            buttonType: buttonType,
-            user: user,
-            companyName: companyName,
-            visitorName: visitorName,
-            guestCount: guestCount
-        )
-    }
+    @ObservedObject var viewModel: ReceptionConfirmViewModel
     
     var body: some View {
         VStack {
@@ -63,6 +47,5 @@ struct ReceptionConfirmView: View {
                 label: {}
             )
         }
-        .hideNavigationBar()
     }
 }

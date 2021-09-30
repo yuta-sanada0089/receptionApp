@@ -25,6 +25,5 @@ struct SearchView: View {
                 .padding(.trailing, 125)
             }
         }
-        .hideNavigationBar()
     }
 }

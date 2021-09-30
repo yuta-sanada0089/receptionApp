@@ -1,9 +1,7 @@
 import SwiftUI
 
 struct VisitorView: View {
-    let user: User?
-    let buttonType: ButtonType
-    @ObservedObject private var viewModel = VisitorViewModel()
+    @ObservedObject var viewModel: VisitorViewModel
     
     var body: some View {
         Text("お客様の会社名／お名前をご入力ください")
@@ -30,6 +28,7 @@ struct VisitorView: View {
         .background(Color.dark12)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .compositingGroup()
+
         HStack {
             Text("お名前")
                 .font(.defaultFont(ofSize: 24))
@@ -49,6 +48,7 @@ struct VisitorView: View {
         .background(Color.dark12)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .compositingGroup()
+
         HStack {
             HStack {
                 Text("追加ゲスト")
@@ -91,6 +91,7 @@ struct VisitorView: View {
             }
             .frame(width: 455, height: 135)
             .border(Color.black, width: 1)
+
             Button(
                 action: { viewModel.onTapButton() },
                 label: {
@@ -109,16 +110,17 @@ struct VisitorView: View {
         .compositingGroup()
         NavigationLink(
             destination: ReceptionConfirmView(
-                user: user,
-                buttonType: buttonType,
-                visitorName: viewModel.visitorName,
-                companyName: viewModel.companyName,
-                guestCount: viewModel.guestCount
+                viewModel: .init(
+                    buttonType: viewModel.buttonType,
+                    user: viewModel.user,
+                    companyName: viewModel.companyName,
+                    visitorName: viewModel.visitorName,
+                    guestCount: viewModel.guestCount
+                )
             ),
             isActive: $viewModel.isPushActive,
             label: {}
         )
-        .hideNavigationBar()
         .edgesIgnoringSafeArea(.all)
     }
 }
