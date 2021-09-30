@@ -11,7 +11,7 @@ class ReceptionConfirmViewModel: ObservableObject, DepecdsOnSlackChatPostMessage
     @Published var guestCount: Int
     var cancellables = [AnyCancellable]()
     
-    init(buttonType: ButtonType, user: User?, companyName: String, visitorName: String, guestCount: Int) {
+    init(buttonType: ButtonType, user: User?, companyName: String = "", visitorName: String = "お客", guestCount: Int = 0) {
         isPushActive = false
         self.buttonType = buttonType
         self.user = user
