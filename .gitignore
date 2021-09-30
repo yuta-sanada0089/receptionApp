@@ -26,4 +26,4 @@ DerivedData/
 
 /*.gcno
 
-.env
+SlackAccessTokens.swift
