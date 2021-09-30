@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ReceptionView: View {
-    @ObservedObject private var viewModel = ReceptionViewModel()
+    private var receptionButtons = receptionButtonData
     private var columns: [GridItem] = Array(repeating: .init(.flexible(maximum: 364), spacing: CGFloat(30.0) ), count: 2)
     var body: some View {
         VStack {
@@ -19,7 +19,7 @@ struct ReceptionView: View {
             Spacer()
                 .frame(height: 16)
             LazyVGrid(columns: columns, alignment: .center, spacing: 30, content: {
-                ForEach(viewModel.receptionButtons, id: \.buttonType) { receptionButton in
+                ForEach(receptionButtons, id: \.buttonType) { receptionButton in
                     NavigationLink(destination: nextView(receptionButton: receptionButton), label: {
                         ReceptionButtonView(receptionButton: receptionButton)
                     })
@@ -27,16 +27,18 @@ struct ReceptionView: View {
             })
             Spacer()
         }
-        .hideNavigationBar()
         .edgesIgnoringSafeArea(.all)
     }
     
     private func nextView(receptionButton: ReceptionButton) -> AnyView {
         switch receptionButton.buttonType {
         case .searchByName: return AnyView(SearchView())
-        case .general: return AnyView(VisitorView(user: nil, buttonType: .general))
-        case .interview: return AnyView(VisitorView(user: nil, buttonType: .interview))
-        case .delivery: return AnyView(ReceptionConfirmView(user: nil, buttonType: .delivery))
+        case .general: return AnyView(VisitorView(viewModel: .init(user: nil, buttonType: .general)))
+        case .interview: return AnyView(VisitorView(viewModel: .init(user: nil, buttonType: .interview)))
+        case .delivery:
+            return AnyView(
+                ReceptionConfirmView(viewModel: .init(buttonType: .delivery, user: nil))
+            )
         }
     }
 }
