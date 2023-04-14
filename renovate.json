@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", ":timezone(Asia/Tokyo)"],
+  "labels": ["dependencies", "renovate"],
+  "enabled": true,
+  "automerge": false,
+  "branchPrefix": "renovate/",
+  "separateMajorMinor": true,
+  "separateMultipleMajor": true,
+  "prCreation": "immediate",
+  "baseBranches": ["master"],
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "automerge": false,
+    "enabled": true
+  },
+  "schedule": [
+    "after 10am before 7pm every weekday"
+  ],
+  "dependencyDashboard": true
+}
