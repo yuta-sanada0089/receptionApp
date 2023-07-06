@@ -8,3 +8,6 @@
 ```bash
 echo "let slackAccessToken = \"slack token\"" > ./receptionApp/SlackAccessTokens.swift
 ```
+
+## Other
+古くて動かなかったらごめんなさい🙏
