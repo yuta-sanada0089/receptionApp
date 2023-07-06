@@ -2,8 +2,8 @@ name: Draft Release
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - master
   pull_request:
     types: [opened, reopened, synchronize]
 
