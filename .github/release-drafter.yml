@@ -1,5 +1,5 @@
-name-template: 'v$RESOLVED_VERSION 🌈'
-tag-template: 'v$RESOLVED_VERSION'
+name-template: '$RESOLVED_VERSION'
+tag-template: '$RESOLVED_VERSION'
 
 categories:
   - title: '🚀 Features'
@@ -10,9 +10,7 @@ categories:
     label: 'Refactoring'
   - title: '📖 Documentation'
     label: 'documentation'
-  - title: Other Changes 🛠
-    labels:
-      - "*"
+  - title: '🛠 Other Changes'
 
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 
@@ -31,8 +29,11 @@ version-resolver:
   default: patch
 
 template: |
-  ## Changes
+  # What's Changed
+
   $CHANGES
+
+  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 
 autolabeler:
   - label: enhancement
