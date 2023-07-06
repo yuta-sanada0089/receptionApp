@@ -15,7 +15,7 @@ jobs:
         run: |
           branch_type=$(echo ${{github.head_ref}} | cut -d "/" -f1)
           if [ $branch_type == 'feature' ]; then
-            label_name=$(echo "enhancement")
+            label_name=$(echo "feature")
           elif [ $branch_type == 'fix' ]; then
             label_name=$(echo "bug")
           else
