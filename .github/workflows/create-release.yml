@@ -30,11 +30,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - name: Extract tag name
+        id: get_tag
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
       - name: Create Release Notes
         uses: github/release-notes-preview-action@v1
         id: release
         with:
           config_path: .github/release.yml
+          draft: true
+          name: ${{ env.RELEASE_VERSION }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Release
