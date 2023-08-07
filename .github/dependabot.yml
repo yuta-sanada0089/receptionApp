@@ -4,11 +4,12 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
+enable-beta-ecosystems: true
 updates:
   - package-ecosystem: "swift" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "11:00"
+      time: "11:30"
       # Use Japan Standard Time (UTC +09:00)
       timezone: "Asia/Tokyo"
