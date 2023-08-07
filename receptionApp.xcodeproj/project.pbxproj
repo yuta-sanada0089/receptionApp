@@ -17,6 +17,10 @@
 		0BEBE53B2A809CFF004CDE3B /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBE53A2A809CFF004CDE3B /* RxSwift-Dynamic */; };
 		0BEBE53D2A809CFF004CDE3B /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBE53C2A809CFF004CDE3B /* RxTest */; };
 		0BEBE53F2A809CFF004CDE3B /* RxTest-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBE53E2A809CFF004CDE3B /* RxTest-Dynamic */; };
+		0BEBE5432A80F7B1004CDE3B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBE5422A80F7B1004CDE3B /* FirebaseAnalytics */; };
+		0BEBE5452A80F7C4004CDE3B /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBE5442A80F7C4004CDE3B /* FirebaseCrashlytics */; };
+		0BEBE5472A80F7DD004CDE3B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBE5462A80F7DD004CDE3B /* FirebaseMessaging */; };
+		0BEBE5492A80F7E7004CDE3B /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBE5482A80F7E7004CDE3B /* FirebasePerformance */; };
 		B719AB3A26C8570E000F5042 /* SlackConversationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB3926C8570E000F5042 /* SlackConversationEndpoint.swift */; };
 		B719AB3C26C8582D000F5042 /* SlackConversationMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB3B26C8582D000F5042 /* SlackConversationMembers.swift */; };
 		B719AB3E26CC3856000F5042 /* SlackConversationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B719AB3D26CC3856000F5042 /* SlackConversationRepository.swift */; };
@@ -145,6 +149,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEBE5472A80F7DD004CDE3B /* FirebaseMessaging in Frameworks */,
+				0BEBE5432A80F7B1004CDE3B /* FirebaseAnalytics in Frameworks */,
 				0BEBE5312A809CFF004CDE3B /* RxCocoa in Frameworks */,
 				0BEBE53B2A809CFF004CDE3B /* RxSwift-Dynamic in Frameworks */,
 				0BEBE5332A809CFF004CDE3B /* RxCocoa-Dynamic in Frameworks */,
@@ -152,10 +158,12 @@
 				0BEBE53D2A809CFF004CDE3B /* RxTest in Frameworks */,
 				B7572E2627059F4E00A83B86 /* CombineMoya in Frameworks */,
 				0BEBE53F2A809CFF004CDE3B /* RxTest-Dynamic in Frameworks */,
+				0BEBE5492A80F7E7004CDE3B /* FirebasePerformance in Frameworks */,
 				0BEBE52D2A809CFF004CDE3B /* RxBlocking in Frameworks */,
 				B7C42D7E26BF0BB500BBCC50 /* ObjectMapper in Frameworks */,
 				B7572E2827059F4E00A83B86 /* Moya in Frameworks */,
 				0BEBE5352A809CFF004CDE3B /* RxRelay in Frameworks */,
+				0BEBE5452A80F7C4004CDE3B /* FirebaseCrashlytics in Frameworks */,
 				0BEBE52F2A809CFF004CDE3B /* RxBlocking-Dynamic in Frameworks */,
 				0BEBE5372A809CFF004CDE3B /* RxRelay-Dynamic in Frameworks */,
 			);
@@ -178,6 +186,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BEBE5412A80F7B1004CDE3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B719AB3826C85182000F5042 /* APIEndpoint */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +226,7 @@
 				B78EB0252690D2E600E839A4 /* receptionAppTests */,
 				B78EB0302690D2E600E839A4 /* receptionAppUITests */,
 				B78EB0122690D2E300E839A4 /* Products */,
+				0BEBE5412A80F7B1004CDE3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -402,6 +418,10 @@
 				0BEBE53A2A809CFF004CDE3B /* RxSwift-Dynamic */,
 				0BEBE53C2A809CFF004CDE3B /* RxTest */,
 				0BEBE53E2A809CFF004CDE3B /* RxTest-Dynamic */,
+				0BEBE5422A80F7B1004CDE3B /* FirebaseAnalytics */,
+				0BEBE5442A80F7C4004CDE3B /* FirebaseCrashlytics */,
+				0BEBE5462A80F7DD004CDE3B /* FirebaseMessaging */,
+				0BEBE5482A80F7E7004CDE3B /* FirebasePerformance */,
 			);
 			productName = entranceApp;
 			productReference = B78EB0112690D2E300E839A4 /* receptionApp.app */;
@@ -478,6 +498,7 @@
 				B7C42D7C26BF0BB500BBCC50 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				B7572E2427059F4E00A83B86 /* XCRemoteSwiftPackageReference "Moya" */,
 				0BEBE52B2A809CFF004CDE3B /* XCRemoteSwiftPackageReference "RxSwift" */,
+				0BEBE5402A80F704004CDE3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = B78EB0122690D2E300E839A4 /* Products */;
 			projectDirPath = "";
@@ -892,6 +913,14 @@
 				minimumVersion = 6.5.0;
 			};
 		};
+		0BEBE5402A80F704004CDE3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 		B7572E2427059F4E00A83B86 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -960,6 +989,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0BEBE52B2A809CFF004CDE3B /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = "RxTest-Dynamic";
+		};
+		0BEBE5422A80F7B1004CDE3B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEBE5402A80F704004CDE3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0BEBE5442A80F7C4004CDE3B /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEBE5402A80F704004CDE3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		0BEBE5462A80F7DD004CDE3B /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEBE5402A80F704004CDE3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		0BEBE5482A80F7E7004CDE3B /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEBE5402A80F704004CDE3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
 		};
 		B7572E2527059F4E00A83B86 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
