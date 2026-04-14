@@ -910,7 +910,7 @@
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 6.5.0;
+				minimumVersion = 6.10.2;
 			};
 		};
 		0BEBE5402A80F704004CDE3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
